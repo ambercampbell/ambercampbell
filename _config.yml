@@ -1,0 +1,28 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Amber Campbell
+tagline:          'Personal Website'
+description:      'Senior Unergraduate in Computer Science at the University of Michigan'
+url:              http://hyde.getpoole.com
+baseurl:          /
+
+author:
+  name:           'Mark Otto'
+  url:            https://twitter.com/mdo
+
+paginate:         5
+
+plugins:
+  - jekyll-gist
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:          https://github.com/ambercampbell/ambercampbell
