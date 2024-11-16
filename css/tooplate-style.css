@@ -666,7 +666,7 @@ footer p {
   Social icon             
 -----------------------------------------*/
 
-.personal-github {
+.personal-github a {
   background: #696969;
   border-radius: 100%;
   color: white;
@@ -674,9 +674,9 @@ footer p {
   font-size: 15px;
   text-decoration: none;
   transition: all 0.4s ease-in-out;
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
   text-align: center;
   vertical-align: middle;
   position: relative;
