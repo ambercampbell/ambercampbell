@@ -32,7 +32,7 @@ html, body {
 
 
 /*---------------------------------------
-  Typorgraphy              
+  Typography              
 -----------------------------------------*/
 
 h1, h2, h3, h4, h5, h6{
@@ -269,7 +269,6 @@ a:hover, a:active, a:focus {
   border-radius: 5px;
   padding: 42px 22px 30px;
   transition: all ease-in-out 0.4s;
-  height: 515px; 
   flex: 0 1 calc(50% - 20px); 
   box-sizing: border-box; 
 }
@@ -293,6 +292,7 @@ a:hover, a:active, a:focus {
 
 .skill-container {
   margin-top: 20px;
+  justify-content: flex-end;
 }
 
 .skill {
@@ -316,12 +316,12 @@ a:hover, a:active, a:focus {
   color: #f0f7ff;
 }
 
-.skill:hover {
+/* .skill:hover {
   border-color: #2b2b2b;
   background: #d9d9d9;
   color: #2b2b2b;
   cursor: crosshair;
-}
+} */
 
 .service-thumb:hover .skill {
   border-color: #2b2b2b;
