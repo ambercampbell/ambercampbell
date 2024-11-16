@@ -178,3 +178,12 @@ $(function(){
 	
 	
 });
+
+// Function to toggle the menu visibility and the hamburger icon
+function toggleMenu() {
+    const menuItems = document.querySelector('.menu-items');
+    const hamburger = document.querySelector('.hamburger');
+    
+    menuItems.classList.toggle('active');
+    hamburger.classList.toggle('active');
+}

@@ -10,7 +10,7 @@ http://www.tooplate.com/view/2087-kalay
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700,300,100|Lora:400,400italic,700,700italic);
 
 body {
-    background: #ffffff;
+    background:  white;
     font-family: Lora, serif;
     font-style: normal;
     font-weight: normal;
@@ -19,7 +19,7 @@ body {
 *{
 	font-family: inherit;
 }
-html, body {
+html, body { 
   width: 100%;
   height: 100%;
 }
@@ -39,10 +39,10 @@ h1, h2, h3, h4, h5, h6{
 	font-family: 'Roboto Mono', sans-serif;
 }
 .color{
-	color:#303F9F;
+	color:#286090;
 }
 h1 {
-  color: #ffffff;
+  color: #286090;
   font-size: 45px;
   line-height: normal;
 }
@@ -51,7 +51,7 @@ h2 {
   color: #2b2b2b;
   font-size: 35px;
   line-height: 52px;
-  margin-top: 0px;
+  margin-top: 30px;
 }
 
 h3 {
@@ -83,8 +83,12 @@ p {
   background: #2b2b2b !important;
 }
 
+.blue-color {
+  color: #286090;
+}
+
 .white-color {
-  color: #f0f0f0;
+  color: #696969;
 }
 
 
@@ -94,10 +98,10 @@ p {
 -----------------------------------------*/
 
 .section-btn {
-  background: #000000;
+  background: #f0f7ff;;
   border: none;
   border-radius: 50px;
-  color: #f0f0f0;
+  color: #286090;
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 1.5px;
@@ -247,7 +251,7 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 .service-thumb {
-  background: #2b2b2b;
+  background:#d9edf7;
   border-radius: 5px;
   padding: 42px 22px;
   cursor: crosshair;
@@ -256,16 +260,16 @@ a:hover, a:active, a:focus {
   -webkit-transition: all ease-in-out 0.4s;
   transition: all ease-in-out 0.4s;
 }
-
+/* 
 .service-thumb:hover {
   background: #ffffff;
   top: -5px;
-}
+} */
 
-.service-thumb:hover .fa,
+/* .service-thumb:hover .fa,
 .service-thumb:hover h4 {
   color: #2b2b2b;
-}
+} */
 
 .service-thumb h4 {
   padding-bottom: 5px;
@@ -280,9 +284,20 @@ a:hover, a:active, a:focus {
   padding: 2px 7px;
   border-style: solid;
   border-radius: 2em;
-  border-color: #d9d9d9;
-  background: #2b2b2b;
-  color: #d9d9d9;
+  border-color: #f0f7ff;
+  background: #f0f7ff;
+  color: #f0f7ff;
+}
+
+
+.skill-button {
+  margin-right: 10px;
+  padding: 2px 7px;
+  border-style: solid;
+  border-radius: 2em;
+  border-color: #286090;
+  background: #286090;
+  color: #f0f7ff;
 }
 
 .skill:hover {
@@ -300,7 +315,7 @@ a:hover, a:active, a:focus {
 
 .service-thumb:hover .skill:hover {
   border-color: #d9d9d9;
-  background: #2b2b2b;
+  background: white;
   color: #d9d9d9;
 }
 
@@ -427,7 +442,10 @@ a.btn-custom{
 -----------------------------------------*/
 
 #about {
-  padding-top: 100px;
+  padding-top: 30px;
+  padding-bottom: 65px;
+  padding-left:30px;
+  padding-right:30px;
 }
 
 .about-image-thumb img {
@@ -446,15 +464,23 @@ a.btn-custom{
 .about-thumb p {
   padding: 2px 0;
 }
+.tl-spacing{
+  padding-left:35px;
+  padding-right:35px;
+  padding-bottom:30px;
+}
+
 .timeline-block .section-header{
-	margin-bottom:80px;
+	margin-bottom:30px;
+  padding-right:30px;
 }
 .timeline{
 	margin:0;
 	padding:0;
 	list-style:none;
 	position:relative;
-	padding:40px 0;
+  padding-left:30px;
+  padding-right:30px;
 }
 .timeline:before{
 	content: ' ';
@@ -464,9 +490,10 @@ a.btn-custom{
 	height:100%;
 	width:1px;
 	background:#D0D0D0;
+  
 }
 .timeline > li{
-	padding-left:40px;
+	padding-left:10px;
 	margin-bottom:40px;
 	font-size:14px;
 	color:rgba(0,0,0,.6);
@@ -740,6 +767,8 @@ footer p {
 	.section-block{
 		padding:90px;
 		padding-top:0;
+    padding-left:30px;
+    padding-right:30px;
 	}
 	.contact-info-icons{
 		margin-top:60px;
@@ -779,9 +808,97 @@ footer p {
 		padding-top:40px;
 	}
 	.section-block{
-		padding:40px;
+		padding:80px;
 		padding-top:0;
 	}
+}
+
+
+/* Container for the menu */
+.menu {
+  position: relative;
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  height: 4px;
+  background-color: #333;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Menu items hidden by default */
+.menu-items {
+  display: none;
+  list-style: none;
+  position: absolute;
+  top: 40px; /* Adjust this to position the menu below the hamburger */
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.menu-items li {
+  padding: 10px;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+/* Show the menu when it's toggled */
+.menu-items.active {
+  display: block;
+}
+
+/* Hamburger icon changes to an "X" when active */
+.hamburger.active .line:nth-child(1) {
+  transform: rotate(45deg);
+  position: relative;
+  top: 5px;
+}
+
+.hamburger.active .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .line:nth-child(3) {
+  transform: rotate(-45deg);
+  position: relative;
+  top: -5px;
+}
+
+/* Mobile responsiveness */
+@media (min-width: 768px) {
+  .hamburger {
+      display: none;
+  }
+
+  .menu-items {
+      display: flex;
+      position: static;
+      box-shadow: none;
+  }
+
+  .menu-items li {
+      margin-left: 20px;
+  }
+
+  .menu-items a {
+      font-size: 18px;
+  }
 }
 
 /*=======================================================
@@ -887,5 +1004,52 @@ body.border-dark .main-content > .page-border{
 	left:14px;
 }
 
-
+.skills-block .section-header{
+	margin-bottom:30;
+}
+.skill{
+	position:relative;
+	margin-bottom:40px;
+}
+.skill:last-of-type{
+	margin-bottom:0;
+}
+.skill > h4{
+	margin-top:0;
+	margin-bottom:5px;
+	font-weight:500;
+	letter-spacing:2px;
+	text-transform:uppercase;
+	font-size:14px;
+}
+.skill > .bar{
+	background:#E0E0E0;
+}
+.skill > .bar > .percent{
+	background:#286090;
+	width:10%;
+	height:6px;
+}
+.menu-btn{
+	font-size:0;
+	display:block;
+	position:absolute;
+	top:20px;
+	right:20px;
+	padding:25px;
+	z-index:499;
+}
+.menu-btn > .lines{
+	display:block;
+	width:36px;
+}
+.menu-btn > .lines > span{
+	display:block;
+	width:100%;
+	height:3px;
+	background:#FFF;
+	-webkit-transition:background 2.5s cubic-bezier(.785,.135,.15,.86);
+	-moz-transition:background 2.5s cubic-bezier(.785,.135,.15,.86);
+	transition:background 2.5s cubic-bezier(.785,.135,.15,.86);
+}
 
