@@ -248,19 +248,15 @@ a:hover, a:active, a:focus {
 }
 
 
-
-
-
 /*---------------------------------------
   Service section              
 -----------------------------------------*/
 .service-container {
   display: flex;
-  flex-wrap: wrap; /* Ensures items wrap on smaller screens */
-  gap: 20px; /* Adds space between items */
+  flex-wrap: wrap; 
+  gap: 20px; 
   justify-content: space-between; 
 }
-
 
 
 .service-thumb-left,
@@ -272,7 +268,6 @@ a:hover, a:active, a:focus {
   flex: 0 1 calc(50% - 20px); 
   box-sizing: border-box; 
 }
-
 
 
 /* 
@@ -848,71 +843,8 @@ footer p {
 }
 
 
-/* Container for the menu */
-.menu {
-  position: relative;
-}
 
-/* Hamburger icon */
-.hamburger {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 20px;
-  cursor: pointer;
-}
 
-.hamburger .line {
-  height: 4px;
-  background-color: #333;
-  border-radius: 2px;
-  transition: all 0.3s ease;
-}
-
-/* Menu items hidden by default */
-.menu-items {
-  display: none;
-  list-style: none;
-  position: absolute;
-  top: 40px; /* Adjust this to position the menu below the hamburger */
-  right: 0;
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  padding: 10px;
-}
-
-.menu-items li {
-  padding: 10px;
-}
-
-.menu-items a {
-  text-decoration: none;
-  color: #333;
-  font-size: 16px;
-}
-
-/* Show the menu when it's toggled */
-.menu-items.active {
-  display: block;
-}
-
-/* Hamburger icon changes to an "X" when active */
-.hamburger.active .line:nth-child(1) {
-  transform: rotate(45deg);
-  position: relative;
-  top: 5px;
-}
-
-.hamburger.active .line:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.active .line:nth-child(3) {
-  transform: rotate(-45deg);
-  position: relative;
-  top: -5px;
-}
 
 /* Mobile responsiveness */
 @media (min-width: 768px) {
