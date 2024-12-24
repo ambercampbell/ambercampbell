@@ -442,8 +442,7 @@
 			  // Get the "more" text and button associated with this particular button
 			  var moreText = button.previousElementSibling.querySelector(".more");
 			  
-			  // If the "more" text is hidden
-			  if (moreText.style.display === "none") {
+			  if (moreText.style.display == "none") {
 				moreText.style.display = "inline"; 
 				button.innerHTML = "Read Less"; 
 			  } else {
