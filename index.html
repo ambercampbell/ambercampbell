@@ -442,13 +442,15 @@
 			function toggleText(button) {
 			  // Get the "more" text and button associated with this particular button
 			  var moreText = button.previousElementSibling.querySelector(".more");
+		
+			  // Toggle the "more" text visibility by toggling the 'display' class
+			  moreText.classList.toggle("more");
 			  
-			  if (moreText.style.display == "none") {
-				moreText.style.display = "inline"; 
-				button.innerHTML = "Read Less"; 
-			  } else {
-				moreText.style.display = "none";
+			  // Toggle the button text
+			  if (moreText.classList.contains("more")) {
 				button.innerHTML = "Read More";
+			  } else {
+				button.innerHTML = "Read Less";
 			  }
 			}
 		  </script>
