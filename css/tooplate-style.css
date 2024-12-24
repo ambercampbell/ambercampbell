@@ -30,6 +30,25 @@ html, body {
 .btn-custom,
 .menu-items > li > a,
 
+/*---------------------------------------
+  Read More Buttons              
+-----------------------------------------*/
+.hidden {
+  display: none;
+}
+
+read-more-btn {
+  background-color: #286090;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.read-more-btn:hover {
+  background-color: #80abd1;
+}
+
 
 /*---------------------------------------
   Typography              
