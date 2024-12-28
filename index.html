@@ -336,7 +336,7 @@
 							<p>
 								At CHEPS, I am currently developing modular Python libraries and bootstraps to be used for healthcare operation simulations. Because many of the center's simulations utilize similar structures and functionalities, creating a library that is database-agnostic and a bootstrap that can be used to create new simulation models will facilitate a more efficient simulation-building process. To promote efficiency and uniformity, I also work on creating SOP documentation for simulations to ensure standardization across projects at the research center. 
 								<span class="more">
-								<br><br>
+								<br>
 								In previous semesters, I designed CPLEX-based algorithms to optimize shift schedules for over 20 trauma physicians and administrators, incorporating working constraints and time-off requests to improve operational efficiency. I also worked on a combination of libraries, bootstraps, and SOP documentation for optimization solutions similar to what I am doing for simulations. These projects have given me hands-on experience with design patterns, Jira, Git, agile workflows, and the SDLC. 
 								<br><br>
 								I really enjoy working at CHEPS and having the opportunity to continuously engage and collaborate with engineers, physicians, and healthcare professionals while enhancing the healthcare system by applying technical solutions that support better patient care and operational workflows.							
@@ -367,7 +367,7 @@
 							<p>
 								At DOCSI, I implemented dynamic, mobile-friendly dashboard features for a surgical waste elimination platform with React, engaging physicians and providing real-time insights into supply usage and cost reduction opportunities. This allowed healthcare providers to make data-driven decisions, minimizing waste and optimizing resource allocation. I also built and deployed back-end services using PHP and PostgreSQL, developing RESTful APIs to facilitate database interactions, supporting the platform's use of real-time metrics. 								
 								<span class="more">
-								<br><br>
+								<br>
 								On this platform, physicians were previously limited to participating in only one “campaign” tied to a specific hospital. This restriction meant that they couldn’t analyze both their spending and contract compliance simultaneously or engage in cost-reduction opportunities across multiple sites. During my internship, I tackled this limitation by restructuring and reorganizing physician, hospital, and hospital system data to support multi-campaign participation. I also developed new back-end and front-end features to display information for multiple campaigns on a unified dashboard, enabling more comprehensive analysis and streamlined functionality.
 								<br><br>
 								This work directly contributed to DOCSI's mission of transforming the healthcare supply chain and improving sustainability in clinical settings with a key focus on physician engagement, allowing me to understand the importance of considering UI/UX during development of a product. This internship gave me the unique experience of working at a startup, which provided a great deal of insight and growth opportunities, and regularly allowed me to engage in decision-making and design processes while contributing to a mission that aligns well with my passions. 
@@ -395,7 +395,7 @@
 							<p>
 								At Menlo, I worked on a web application designed to help healthcare professionals review prescriptions for Direct Oral Anticoagulants (DOACs). It identifies patients on DOACs and applies logic rules to assess prescriptions. The back-end utilizes a daily cron job to generate alerts by pulling and parsing patient data from EHR systems. To comply with HIPAA regulations, it stores only FHIR IDs, fetching patient data as needed. The app is built using HTML, CSS, JavaScript, Python, Django, PostgreSQL, and AWS, and is optimized for deployment within Epic Hyperspace without a complex front-end framework.    
 								<span class="more">
-								<br><br>
+								<br>
 								The application addresses prescription errors, which occur in 10-15% of DOAC prescriptions, by providing nurses and pharmacists with an efficient tool to review and correct errors, rather than having to manually review all prescriptions. The dashboard displays alerts associated with specific patient prescriptions, offering detailed patient information and allowing users to take action, such as snoozing or resolving alerts, resulting in intervention in 79% of cases. While similar tools exist in Epic’s EHR, this application was developed as a stand-alone using FHIR interoperability standards, allowing seamless integration with Epic and other EHR systems for broader hospital use.							
 								<br><br>
 								The main tasks I worked on during this internship was developing the core logic for identifying prescriptions to flag and what kind of flag to associate with such prescriptions. I also worked on logic that involved caching generated alerts and using this cache to only display unresolved alerts and only re-examine prescriptions if something in the patient’s data has changed. 
@@ -440,19 +440,20 @@
 		</div>
 		<script>
 			function toggleText(button) {
-			  // Get the "more" text and button associated with this particular button
-			  var moreText = button.previousElementSibling.querySelector(".more");
-		
-			  // Toggle the "more" text visibility by toggling the 'display' class
-			  moreText.classList.toggle("more");
-			  
-			  // Toggle the button text
-			  if (moreText.classList.contains("more")) {
-				button.innerHTML = "Read More";
-			  } else {
-				button.innerHTML = "Read Less";
-			  }
+				// Get the "more" text associated with this particular button
+				var moreText = button.previousElementSibling.querySelector(".more");
+
+				// Toggle the "show" class to control visibility
+				moreText.classList.toggle("show");
+
+				// Toggle the button text
+				if (moreText.classList.contains("show")) {
+					button.innerHTML = "Read Less";
+				} else {
+					button.innerHTML = "Read More";
+				}
 			}
+
 		  </script>
 		
 	</div>

@@ -37,6 +37,10 @@ html, body {
 .more {
   display: none;
 }
+.show {
+  display: block;
+}
+
 
 read-more-btn {
   background-color: #286090;
